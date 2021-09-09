@@ -1,5 +1,6 @@
 FROM python:3
 WORKDIR /usr/src/app
+GITHUB_SHA
 EXPOSE 3000
 COPY requirements.txt .
 RUN pip install -qr requirements.txt
