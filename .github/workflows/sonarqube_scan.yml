@@ -49,7 +49,7 @@ jobs:
         - name: Run Trivy vulnerability scanner
           uses: aquasecurity/trivy-action@master
           with:
-            image-ref: 'docker.io/aelomari/app1:${{ github.sha }}'
+            image-ref: 'aelomari/app1:latest'
             format: 'template'
             exit-code: '0'
             ignore-unfixed: true
