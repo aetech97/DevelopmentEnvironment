@@ -39,8 +39,8 @@ jobs:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         - name: Dependencies Check
           uses: sburris/dependency-check-action@master
-            with:
-              Project-Name: TestApp
+          with:
+            Project-Name: TestApp
         - name: Archive dependency check reports
           uses: actions/upload-artifact@v1
           with:
